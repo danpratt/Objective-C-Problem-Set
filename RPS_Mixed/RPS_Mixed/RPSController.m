@@ -14,7 +14,7 @@
     _game = game;
 }
 
--(void)throwDown:(Move) playersMove {
+-(void)throwDown:(NSInteger) playersMove {
     
     // Here the RPSTurn class generates the opponent's move
     RPSTurn *playersTurn = [[RPSTurn alloc]initWithMove:playersMove];
