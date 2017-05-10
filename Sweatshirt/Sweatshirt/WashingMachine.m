@@ -10,7 +10,7 @@
 
 @implementation WashingMachine
 
--(Sweatshirt*)wash:(Sweatshirt*)sweatshirt {
+-(Sweatshirt* _Nullable)wash:(Sweatshirt* _Nullable)sweatshirt {
     sweatshirt.clean = true;
     sweatshirt.softness--;
     if(sweatshirt.softness <= 0){
