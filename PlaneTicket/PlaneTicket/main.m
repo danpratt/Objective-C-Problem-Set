@@ -19,7 +19,6 @@ int main(int argc, const char * argv[]) {
         NSMutableString *destination = [[NSMutableString alloc] initWithString: @"Oakland"];
         NSMutableString *passenger = [[Passenger alloc] initWithName: name] ;
         
-        
     }
     return 0;
 }

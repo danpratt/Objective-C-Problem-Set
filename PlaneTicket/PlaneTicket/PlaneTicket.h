@@ -11,20 +11,17 @@
 @import Foundation;
 #import "Passenger.h"
 
-
-NS_ASSUME_NONNULL_BEGIN
 @interface PlaneTicket : NSObject
 
-@property (nonnull, nonatomic, copy) NSString *departureCity;
-@property (nonnull, nonatomic, copy) NSString *destination;
-@property (nonnull, nonatomic)       NSDate *departureDate;
-@property (nonnull, nonatomic, copy) NSString *seatAssignment;
-@property (nonnull, nonatomic) Passenger *passenger;
+@property (nonatomic, copy) NSString * _Nonnull departureCity;
+@property (nonatomic, copy) NSString * _Nonnull destination;
+@property (nonatomic)       NSDate * _Nonnull departureDate;
+@property (nonatomic, copy) NSString * _Nonnull seatAssignment;
+@property (nonatomic) Passenger * _Nonnull passenger;
 
--(nullable instancetype)initWithDestination:(NSString*)destination
-                     departureCity:(NSString*)departureCity
-                         passenger:(Passenger*)person
-                              date:(NSDate*)departureDate;
+-(_Nullable instancetype)initWithDestination:(NSString* _Nonnull)destination
+                     departureCity:(NSString* _Nonnull)departureCity
+                         passenger:(Passenger* _Nonnull)person
+                              date:(NSDate* _Nonnull)departureDate;
 
 @end
-NS_ASSUME_NONNULL_END
