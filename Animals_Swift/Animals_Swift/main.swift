@@ -26,10 +26,18 @@ let cityAnimal = myApartment?.animals![randomNumber]
 
 if let rat = farmAnimal as? Rat {
     rat.scurry()
+} else if let goldenDoodle = farmAnimal as? GoldenDoodle {
+    goldenDoodle.romp()
 }
+
+// Pig doesn't have any functions, so not handling that one.
 
 if let pigeon = cityAnimal as? Pigeon {
     pigeon.deliverMessage()
+} else if let rat = cityAnimal as? Rat {
+    rat.scurry()
+} else if let goldenDoodle = cityAnimal as? GoldenDoodle {
+    goldenDoodle.romp()
 }
 
 
