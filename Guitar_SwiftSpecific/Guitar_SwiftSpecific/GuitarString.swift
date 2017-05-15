@@ -14,12 +14,12 @@ import Cocoa
     case OutOfTune = 300
 }
 
-struct GuitarString {
+class GuitarString: NSObject {
     
     var broken: Bool = false
     var outOfTune: Bool = false
     
-    mutating func pluck(velocity: Float) throws {
+    func pluck(velocity: Float) throws {
         if broken {
             // can't play a broken string
             throw GuitarStringError.Broken
